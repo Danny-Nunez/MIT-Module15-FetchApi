@@ -1,6 +1,11 @@
-# MIT Module 15 Fetch And Render Data Coding Challenge
+# MIT Module 15 
+
+<h3>Fetch And Render Data Coding Challenge</h3>
+A react app using a breaking bad api - https://api.breakingbadquotes.xyz/v1/quotes
+to display a random quote from the famous breaking bad series.
 
 <img width="660" alt="Screen Shot 2023-02-28 at 12 50 23 AM" src="https://user-images.githubusercontent.com/114783191/221766344-ab2d14c9-b7c7-474d-8d17-9107e92c8d11.png">
+Live Demo 👉 https://mit-module15-fetchapi.netlify.app/
 
 # Getting Started with Create React App
 

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './breakingbad.jpg';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-function App() {
+const App = () => {
+  const [quote, setQuote] = useState("");
+
+  const getQuote = async () => {
+    const response = await axios.get("https://api.breakingbadquotes.xyz/v1/quotes");
+    setQuote(response.data[0].quote);
+  };
+
+  useEffect(() => {
+    getQuote();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="breakwrapper">
+      
+      <div className="bodywrap">
+      <img src={logo} className="logo" alt="Logo" />
+      <h1>Random Breaking Bad Quote</h1>
+      <p>{quote}</p>
+      <button onClick={getQuote}>Get New Quote</button>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

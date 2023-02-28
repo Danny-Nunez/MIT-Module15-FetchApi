@@ -1,3 +1,7 @@
+# MIT Module 15 Fetch And Render Data Coding Challenge
+
+<img width="660" alt="Screen Shot 2023-02-28 at 12 50 23 AM" src="https://user-images.githubusercontent.com/114783191/221766344-ab2d14c9-b7c7-474d-8d17-9107e92c8d11.png">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
